@@ -1,7 +1,7 @@
 fastapi==0.85.0
 Keras==2.4.3
 nltk==3.5
-numpy==1.18.5
+numpy==1.20
 textblob==0.15.3
 uvicorn==0.16.0
 tensorflow==2.8.0
