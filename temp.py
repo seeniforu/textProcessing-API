@@ -1,7 +1,7 @@
 from unicodedata import name
 from fastapi import FastAPI
 import uvicorn
-from TextProcessing import output
+import output
 
 app = FastAPI()
 
