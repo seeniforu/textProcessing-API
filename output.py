@@ -3,7 +3,6 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
-from textblob import TextBlob
 from keras.models import load_model
 import os
 model = load_model('model.h5')
@@ -53,12 +52,6 @@ def getResponse(ints, intents_json):
         return result
     else:
         return "Sorry Data Not Available"
-        
-
-def autocorrect(msg2):
-    text=TextBlob(msg2)
-    msg2=str(text.correct())
-    return msg2
 
 def resultGeneration(msg):
     ints = predict_class(msg)
