@@ -9,10 +9,11 @@ app = FastAPI()
 def helloWorld():
     return f"hello It's working!"
 
+#http://localhost:8080/index?name=launch%20browser
 @app.get('/index') 
 def helloWorld(name : str):
     out = output.resultGeneration(name)
-    return f"{out}!"
+    return f"{out}"
 
 
 if __name__ == "__main__":
