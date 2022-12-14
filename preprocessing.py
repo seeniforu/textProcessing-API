@@ -4,9 +4,9 @@ from nltk.stem import WordNetLemmatizer
 
 nltk.download('popular',quiet=True) 
 
-nltk.download('punkt')    
+# nltk.download('punkt')    
                         
-nltk.download('wordnet')        
+# nltk.download('wordnet')        
                                 
 lemmatizer = WordNetLemmatizer()
 import json
