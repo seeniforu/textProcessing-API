@@ -66,7 +66,7 @@ import random
 import numpy as np
 
 random.shuffle(training)             
-training[0] = np.array(training)     
+training = np.array(training, dtype=object)     
 train_x = list(training[:,0])        
 train_y = list(training[:,1])
 print("Training data created")
