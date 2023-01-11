@@ -71,12 +71,12 @@ train_x = list(training[:,0])
 train_y = list(training[:,1])
 print("Training data created")
 
-                                                                        
+import keras                                                                 
 from keras.models import Sequential
 
 from keras.layers import Dense, Activation, Dropout
 
-from keras.optimizers import SGD
+from tensorflow.keras.optimizers import SGD
 
 model = Sequential()    
 model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))        
@@ -94,40 +94,3 @@ fitting = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size
 model.save('model.h5', fitting)
 
 print("model created")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
