@@ -1,31 +1,96 @@
 {"intents": [
         {"tag": "invoke_browser",
-         "patterns": ["launch", "please launch","open browser", "please open", "open the browser"],
+         "patterns": ["launch", "please launch","open browser", "please open", "open the browser", "launch chrome browser", "launch firefox browser", "launch edge browser", "launch opera browser", "launch safari browser", "open chrome", "open firefox", "open edge", "open opera", "open safari"],
          "responses": ["launch browser method"],
          "context": [""]
         },
         {"tag": "launch_url",
-         "patterns": ["launch", "please launch","open the url", "please open", "open"],
+         "patterns": ["launch", "please launch","open the url", "please open", "open", "open default url", "open url from properties file", "launch url from properties file", "By launching url"],
          "responses": ["launch url method"],
          "context": [""]
         },
         {"tag": "page_load_time",
-         "patterns": ["set page load time", "please set page load timeout","page load time is", "default page load time is", "default load time"],
+         "patterns": ["set page load time as", "please set page load timeout","page load time is", "default page load time is", "default load time"],
          "responses": ["page load time"],
          "context": [""]
         },
         {"tag": "implicit_wait_time",
-         "patterns": ["set implicit wait time", "please set implicit wait timeout","implicit wait time is", "default implicit wait time is", "default implicit wait time"],
+         "patterns": ["set implicit wait time as", "please set implicit wait timeout","implicit wait time is", "default implicit wait time is", "default implicit wait time", "implicitly wait for"],
          "responses": ["implicit wait time"],
          "context": [""]
         },
+        {"tag": "click_element",
+         "patterns": ["click the element", "click element","please click the element", "By clicking the element navigate to", "click", "click using", "with the given locater click the element", "with the given locator click element"],
+         "responses": ["click element method"],
+         "context": [""]
+        },
+        {"tag": "click_element_using_xpath",
+         "patterns": ["click the element using xpath", "click element xpath","please click the element with given xpath", "By clicking the element with xpath navigate to", "click using xpath", "with the given xpath click the element", "with the given xpath locator click element"],
+         "responses": ["click element using xpath"],
+         "context": [""]
+        },
+        {"tag": "click_element_using_id",
+         "patterns": ["click the element using id", "click element id","please click the element with given id", "By clicking the element with id navigate to", "click using id", "with the given id click the element", "with the given id locator click element"],
+         "responses": ["click element using id"],
+         "context": [""]
+        },
+        {"tag": "click_element_using_class_name",
+         "patterns": ["click the element using class name", "click element class name","please click the element with given class name", "By clicking the element with class name navigate to", "click using classname", "with the given class name click the element", "with the given class name locator click element"],
+         "responses": ["click element using class name"],
+         "context": [""]
+        },
+        {"tag": "click_element_using_link_text",
+         "patterns": ["click the element using link text", "click element link text","please click the element with given link text", "By clicking the element with link text navigate to", "click using linktext", "with the given link text click the element", "with the given link text locator click element"],
+         "responses": ["click element using link text"],
+         "context": [""]
+        },
+        {"tag": "click_element_using_tag_name",
+         "patterns": ["click the element using tag name", "click element tag name","please click the element with given tag name", "By clicking the element with tag name navigate to", "click using tagname", "with the given tag name click the element", "with the given tag name locator click element"],
+         "responses": ["click element using tag name"],
+         "context": [""]
+        },
+        {"tag": "take_screenshot",
+         "patterns": ["take screenshot", "take screenshot of present screen","record a screenshot", "pick a screenshot", "take screenshot of given element", "take screenshot of element"],
+         "responses": ["screenshot method"],
+         "context": [""]
+        },
+        {"tag": "send_to_element",
+         "patterns": ["send keys", "send data as","send the data to field", "send", "send using", "give data as", "with the given locater send data to", "with the given locator send keys to"],
+         "responses": ["send keys method"],
+         "context": [""]
+        },
+        {"tag": "verify_element",
+         "patterns": ["Verify the element", "Verify element","please Verify the element", "By Verifying the element", "Verify", "Verify using", "with the given locater verify the element of", "with the given locator verify element of"],
+         "responses": ["Verify element method"],
+         "context": [""]
+        },
+        {"tag": "get_text_of_element",
+         "patterns": ["get text of element", "get text element","please get the text of element", "By getting text of the element", "get text", "get text using", "with the given locater get text of", "with the given locator get text of"],
+         "responses": ["get text of element"],
+         "context": [""]
+        },
+        {"tag": "get_css_of_element",
+         "patterns": ["get css value of the element", "retrieve css value of element","please retrieve css value of the element", "retrieve css of element", "css of element", "get css value of element using", "with the given locater get the css element", "with the given locator get the css element"],
+         "responses": ["get css of element"],
+         "context": [""]
+        },
+        {"tag": "get_location_of_element",
+         "patterns": ["get location value of the element", "retrieve location of the element", "please retrieve location value of the element", "retrieve location of element", "location of element", "get location value of element using", "with the given locater get the location of element", "with the given locator get the location element"],
+         "responses": ["get location of element"],
+         "context": [""]
+        },
+        {"tag": "get_size_of_element",
+         "patterns": ["get size of the element", "retrieve size of the element", "please retrieve size value of the element", "retrieve size of element", "size of element", "get size value of element using", "with the given locater get the size of element", "with the given locator get the size of element"],
+         "responses": ["get size of element"],
+         "context": [""]
+        },
         {"tag": "close_browser",
-         "patterns": ["close", "please close","close the window", "close the browser", "close it"],
+         "patterns": ["close", "please close","close the browser window", "close the browser", "close it"],
          "responses": ["close browser method"],
          "context": [""]
         },
         {"tag": "quit_browser",
-         "patterns": ["quit", "please quit","quit the window", "quit the browser", "quit it"],
+         "patterns": ["quit", "please quit","quit the browser window", "quit the browser", "quit it"],
          "responses": ["quit browser method"],
          "context": [""]
         }

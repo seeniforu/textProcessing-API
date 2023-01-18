@@ -58,4 +58,4 @@ def resultGeneration(msg):
     res = getResponse(ints, intents)
     return res
 
-print(resultGeneration("set page load time as 19"))
+print(resultGeneration("send key values to given locator"))
