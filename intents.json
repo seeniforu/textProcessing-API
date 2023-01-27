@@ -34,14 +34,29 @@
          "responses": ["click element using id"],
          "context": [""]
         },
+        {"tag": "click_element_using_name",
+         "patterns": ["click the element using name", "click element with name","please click the element with given name locator", "By clicking the element with name locator navigate to", "click with name locator", "with the given name click the element", "with the given name locator click element"],
+         "responses": ["click element using name"],
+         "context": [""]
+        },
         {"tag": "click_element_using_class_name",
          "patterns": ["click the element using class name", "click element class name","please click the element with given class name", "By clicking the element with class name navigate to", "click using classname", "with the given class name click the element", "with the given class name locator click element"],
          "responses": ["click element using class name"],
          "context": [""]
         },
+        {"tag": "click_element_using_css_selector",
+         "patterns": ["click the element using css selector", "click element with css selector","please click the element with given css selector", "By clicking the element with css selector navigate to", "click using css selector", "with the given css selector click the element", "with the given css selector as locator click element"],
+         "responses": ["click element using css selector"],
+         "context": [""]
+        },
         {"tag": "click_element_using_link_text",
          "patterns": ["click the element using link text", "click element link text","please click the element with given link text", "By clicking the element with link text navigate to", "click using linktext", "with the given link text click the element", "with the given link text locator click element"],
          "responses": ["click element using link text"],
+         "context": [""]
+        },
+        {"tag": "click_element_using_partial_link_text",
+         "patterns": ["click the element using partial link text", "click element with partial link text","please click the element with given partial link text", "By clicking the element with partial link text navigate to", "click using partial linktext", "with the given partial link text click the element", "with the given partial link text locator click element"],
+         "responses": ["click element using partial link text"],
          "context": [""]
         },
         {"tag": "click_element_using_tag_name",
@@ -82,6 +97,16 @@
         {"tag": "get_size_of_element",
          "patterns": ["get size of the element", "retrieve size of the element", "please retrieve size value of the element", "retrieve size of element", "size of element", "get size value of element using", "with the given locater get the size of element", "with the given locator get the size of element"],
          "responses": ["get size of element"],
+         "context": [""]
+        },
+        {"tag": "thread_sleep",
+         "patterns": ["sleep for some seconds","sleep for default seconds","give thread sleep","thread sleep as","go to thread sleep for seconds"],
+         "responses": ["thread sleep"],
+         "context": [""]
+        },
+        {"tag": "teardown_process",
+         "patterns": ["end all process","tear down the execution","complete the execution","finish the execution","complete the testcase","teardown and log the results","teardown the process"],
+         "responses": ["teardown method"],
          "context": [""]
         },
         {"tag": "close_browser",

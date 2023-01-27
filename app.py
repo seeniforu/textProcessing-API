@@ -1,20 +1,22 @@
 from unicodedata import name
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 import uvicorn
 import output
 
 app = FastAPI()
 
 @app.get('/') 
-def helloWorld():
-    return f"hello It's working!"
+def intialCheck():
+    return f"It's working!"
 
 #http://localhost:8080/index?name=launch%20browser
-@app.get('/index') 
-def helloWorld(name : str):
+@app.get('/getResponse') 
+def getResponse(name : str):
     out = output.resultGeneration(name)
-    return f"{out}"
-
+    return {
+        "status" : "SUCCESS",
+        "response" : out
+    }
 
 if __name__ == "__main__":
     uvicorn.run(app, port=8080, host='0.0.0.0')
